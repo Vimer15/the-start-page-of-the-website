@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <form class="form" method="post" action="registration.html">
+            <label for="welcome">Авторизация</label>
+
+            <label for="fullname">ФИО:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Введите ваше ФИО" required    >
+
+            <label for="inputNumberPhone">Введите номер телефона</label>
+            <input type="tel" id="inputNumberPhone" name="inputNumberPhone" placeholder="Введите номер телефона" required pattern="\+7[0-9]{10}">
+
+            <label for="DateUser">Введите дату рождения</label>
+            <input type="date" id="DateUser" name="DateUser" required min="1990-03-15" max="2007-03-13">
+
+            <label for="login">Логин:</label>
+            <input type="text" id="login" name="fullname" placeholder="Введите свой логин" pattern="[A-Za-z]+" required>
+
+            <label for="login">Данные паспорта:</label>
+            <input type="text" id="number_passport_4" name="number_passport_4" placeholder="Серия номер паспорта:" pattern="[0-9]{4} [0-9]{6}" required>
+
+
+            <label for="email">Почта:</label>
+            <input type="email" id="inputEmail" name="email" placeholder="Введите почту" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required minlength="8">
+
+            
+
+            <button type="submit">Войти</button>
+            <a href="registration.html">Нет аккаунта?</a>
+        </form>
+    </div>
+</body>
+</html>
